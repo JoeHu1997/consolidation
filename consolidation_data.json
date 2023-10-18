@@ -1,0 +1,7 @@
+{
+    "type": ["A"],
+    "firstSoil":["C"],
+    "firstThickness":[10],
+    "secondSoil":["C"],
+    "secondThickness":[10]
+  }
