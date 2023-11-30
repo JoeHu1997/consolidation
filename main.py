@@ -16,6 +16,9 @@ class MatrixCalculator:
             #print(data)
             for key, value in data.items():
                 setattr(self, key, value)
+    
+    def calculate_gamma(self,e=None,):
+
             
 
     def calculate_matrix(self):
