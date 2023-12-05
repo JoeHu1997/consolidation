@@ -1,7 +1,24 @@
 {
-    "type": ["A"],
-    "firstSoil":["C"],
-    "firstThickness":[10],
-    "secondSoil":["C"],
-    "secondThickness":[10]
+    "calculatetype": ["A"],
+    "firstSoil":{
+      "soiltype":["C"],
+      "thickness":[10],
+      "e":[],
+      "Gs":[1.65],
+      "w":[],
+      "S":[],
+      "gammad":[],
+      "gammam":[]
+    },
+    "secondSoil":{
+      "soiltype":[],
+      "thickness":[],
+      "e":[],
+      "Gs":[],
+      "w":[],
+      "S":[],
+      "gammad":[],
+      "gammam":[]
+    }
+
   }
