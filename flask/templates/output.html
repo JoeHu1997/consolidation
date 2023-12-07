@@ -5,23 +5,23 @@
     <title>Input Page</title>
 </head>
 <body>
-    <form method='post' action="/polecalculater"> <!--用post的方式去到polecalculculater-->
+    <form method='post' action="/polecalculater">
         <table>
             <tr>
                 <td>項目1:</td>
-                <td><input type="int" name="item1"></td>
+                <td><div class="readonly-field">{{ item1 }}</div></td>
             </tr>
             <tr>
                 <td>項目2:</td>
-                <td><input type="int" name="item2"></td>
+                <td><div class="readonly-field">{{ item2 }}</div></td>
             </tr>
             <tr>
                 <td>項目3:</td>
-                <td><input type="int" name="item3"></td>
+                <td><div class="readonly-field">{{ item3 }}</div></td>
             </tr>
             <tr>
                 <td>項目4:</td>
-                <td><input type="int" name="item4"></td>
+                <td><div class="readonly-field">{{ item4 }}</div></td>
             </tr>
         </table>
         
