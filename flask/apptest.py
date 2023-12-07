@@ -5,27 +5,11 @@ app = Flask(__name__,
             static_url_path="/static"
             )
 
-@app.route("/input")
-def input():
-    return render_template("input.html")
+@app.route("/")
+def home():
+    name = request.args.get('name')
+    return render_template('test.html', name=name)
 
-@app.route("/polecalculater", methods=["POST"])
-def polecalculater():
-    Gs = request.form.get("item1")
-    w = request.form.get("item2")
-    S = request.form.get("item3")
-    e = request.form.get("item4")
-    parameters = [e, Gs, w, S]
-    # 定義提供的參數集合
-    provided_params = ['e', 'Gs', 'w', 'S']
-    # 檢查每個值是否為空
-    for param_name, param_value in zip(provided_params, parameters):
-        if param_value is None or param_value == "":
-            if param_name == 
-            print(f"Error: {param_name} is empty.")
-    print(parameters)
-    
-    return "work"
 @app.route("/head")
 def index():
     '''
@@ -62,4 +46,4 @@ def login():
     #  非POST的時候就會回傳一個空白的模板
     return render_template('login.html')
 app.debug = True
-app.run(port=5000)
+app.run(host="0.0.0.0")
