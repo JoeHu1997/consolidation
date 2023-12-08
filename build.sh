@@ -1,6 +1,6 @@
 pwd
 ls 
-cd /flask
+cd flask
 #!/bin/bash
 pip install --upgrade pip
 pip install -r requirements.txt
