@@ -21,6 +21,7 @@ def polecalculater():
     w_str = request.form.get("item2")
     S_str = request.form.get("item3")
     e_str = request.form.get("item4")
+    gammaw = 1000
 
     Gs = convert_to_int(Gs_str)
     w = convert_to_int(w_str)
@@ -48,8 +49,11 @@ def polecalculater():
             else:
                 S = Gs*w/e
                 print(4)
-    print(parameters)    
-    return render_template("output.html", item1=Gs, item2=w, item3=S, item4=e)
 
+    #兩種土壤密度建立
+    gammad = Gs*gammaw/(1+e)
+    gammam = Gs*gammaw*(1+w)/(1+e)
+    gammas = Gs*gammaw 
+    return render_template("output.html", item1=Gs, item2=w, item3=S, item4=e, item5 = gammad, item6 = gammam)
 app.debug = True
 app.run(port=5000)
