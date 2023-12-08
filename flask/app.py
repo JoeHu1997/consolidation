@@ -56,4 +56,4 @@ def polecalculater():
     gammas = Gs*gammaw 
     return render_template("output.html", item1=Gs, item2=w, item3=S, item4=e, item5 = gammad, item6 = gammam)
 #app.debug = True
-app.run()
+app.run(host='0.0.0.0')
