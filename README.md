@@ -14,7 +14,17 @@ Stage Three: Deploying it on a webpage, possibly involving frontend and programm
 12/06 經過昨日與大神的探討，決定將開發的部分，與後端建立一起開發，目前選定的後端框架為flask，若不考慮程式的擴充性，可以利用submit多個土壤參數的方式，將資料傳至專門計算的route，並再回傳計算結果。
 12/07 flask的範例專案為會員系統登入，其結構為輸入兩組數字作為帳號密碼，並進行判斷．  
 應用在我們的專案，提交的部分為各種土壤參數，而原本連接至資料庫的部分，則替換為utility functions，登入成功的頁面則替換為計算的結果．  
-前四項土壤參數換算已完成，再來就是推廣到六參數中使用，gammad跟gammam皆可以用前四個參數及水密度進行計算，主要要分析題目所提供的參數是否皆有方程式可以找到相關性。
+前四項土壤參數換算已完成，再來就是推廣到七參數中使用，gammad、gammas跟gammam皆可以用前四個參數及水密度進行計算，主要要分析題目所提供的參數是否皆有方程式可以找到相關性。  
+Gs* w = S*e(4)  
+gammad = Gs* gammaw/(1+e)(3)  
+gammam = Gs* gammaw*(1+w)/(1+e)(4)  
+gammas = Gs*gammaw(2)  
+四個方程式 七個未知數 至少要有三個已知 因此未知的情況為C7取4 35種組合:  
+(1)若三個已知為Gs* w = S*e中的三個 可視為第一種情形(4)
+(2)gammam = Gs* gammaw*(1+w)/(1+e) 同上(4)與上面有一個重複
+(3)
+(4)
+
 
 參考資料：
 https://ithelap.ithome.com.tw/articles/10300062
