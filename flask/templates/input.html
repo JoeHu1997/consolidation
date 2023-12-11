@@ -5,25 +5,42 @@
     <title>Input Page</title>
 </head>
 <body>
-    <form method='post' action="/polecalculater"> <!--用post的方式去到polecalculculater-->
+    <form method='post' action="/polecalculater2"> <!--用post的方式去到polecalculculater2-->
         <table>
             <tr>
-                <td>項目1:</td>
+                <td>Gs:</td>
                 <td><input type="int" name="item1"></td>
             </tr>
             <tr>
-                <td>項目2:</td>
+                <td>w:</td>
                 <td><input type="int" name="item2"></td>
             </tr>
             <tr>
-                <td>項目3:</td>
+                <td>S:</td>
                 <td><input type="int" name="item3"></td>
             </tr>
             <tr>
-                <td>項目4:</td>
+                <td>e:</td>
                 <td><input type="int" name="item4"></td>
             </tr>
+            <tr>
+                <td>gammad:</td>
+                <td><input type="int" name="item5"></td>
+            </tr>
+            <tr>
+                <td>gammam:</td>
+                <td><input type="int" name="item6"></td>
+            </tr>
+            <tr>
+                <td>gammas:</td>
+                <td><input type="text" name="item7"></td>
+            </tr>
         </table>
+        
+        <tr>
+            <td>錯誤:</td>
+            <td><input type="text" name="item8" value="{{ item8 }}"></td>
+        </tr>
         
         <input type="submit" value="提交">
     </form>

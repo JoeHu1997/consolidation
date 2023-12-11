@@ -18,12 +18,17 @@ Stage Three: Deploying it on a webpage, possibly involving frontend and programm
 Gs* w = S*e(4)  
 gammad = Gs* gammaw/(1+e)(3)  
 gammam = Gs* gammaw*(1+w)/(1+e)(4)  
-gammas = Gs*gammaw(2)  
-四個方程式 七個未知數 至少要有三個已知 因此未知的情況為C7取4 35種組合:  
-(1)若三個已知為Gs* w = S*e中的三個 可視為第一種情形(4)
-(2)gammam = Gs* gammaw*(1+w)/(1+e) 同上(4)與上面有一個重複
-(3)
-(4)
+#gammas = Gs*gammaw(2)  
+三個方程式 六個未知數 至少要有三個已知 因此未知的情況為C6取3 20種組合:  
+(1)若三個已知為Gs* w = S*e中的三個 可視為第一種情形(4) =>gammad,gammam必為未知  
+(2)gammam = Gs* gammaw*(1+w)/(1+e) 同上(4)與上面有一個重複=>gammad必為未知  
+(3)gammad = Gs* gammaw/(1+e) 這三種則必須再多知道一個第一式中的未知數 (6)+(6)=> gammam必為未知且此三個參數同時為已知並無解出方程式．
+判斷流程： 
+1.gammad,gammam皆為未知  
+2.若gammad為未知
+3.若gammam為未知且gammad,Gs,e其一為未知
+4.若gammam為未知且gammad,Gs,e皆為已知
+
 
 
 參考資料：
