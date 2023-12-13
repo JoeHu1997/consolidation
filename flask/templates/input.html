@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f2f7fd; /* 藍色調的背景色 */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,8 +19,9 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 50%;
+            width: 70%; /* 調整寬度 */
             max-width: 500px;
+            margin-top: 20px; /* 調整上邊距 */
         }
 
         table {
@@ -46,7 +47,7 @@
         }
 
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* 綠色按鈕 */
             color: white;
             padding: 15px;
             border: none;
@@ -70,6 +71,7 @@
 <body>
     <form method='post' action="/polecalculater2">
         <table>
+            
             <tr>
                 <td>Gs:</td>
                 <td><input type="int" name="item1"></td>
@@ -98,6 +100,7 @@
                 <td>gammas:</td>
                 <td><input type="text" name="item7"></td>
             </tr>
+            
         </table>
         
         <div class="error">
@@ -109,4 +112,3 @@
     </form>
 </body>
 </html>
-
