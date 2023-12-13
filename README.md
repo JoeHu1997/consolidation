@@ -37,6 +37,8 @@ gammam = Gs* gammaw*(1+w)/(1+e)(4)
     (3)沙土壓黏土壓沙土
 除了土層外，通常題目會伴隨著地下水面下降後會如何改變，此過程就會產生壓密．以及最後有時會出現外加載重的情況，也要一併考慮．
 故函數開發第二階段期望建立各種情況下的壓密沈陷量的計算即可．
-
+12/13  
+技術上開始嘗試使用blueprint，先嘗試建立一個有垂直有效應力(effective stress)的blueprint，底下應包含init、 views、form、templates  其中form 會利用 Flask-WTF 進行開發
+form:六個土壤參數 土層厚 地下水面高度 OCR 
 參考資料：
 https://ithelap.ithome.com.tw/articles/10300062
