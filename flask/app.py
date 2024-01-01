@@ -170,6 +170,6 @@ def calculate_gammadparameters(gammad, Gs, e):
             
     return gammad, Gs, e
 
-app.debug = True
-#app.run(host='0.0.0.0')
-app.run()
+app.debug = False
+app.run(host='0.0.0.0')
+# app.run()
